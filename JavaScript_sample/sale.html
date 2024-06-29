@@ -1,117 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>DIC cafe</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/sale.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/sale.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="header_nav">
-        <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
-        <ul class="global_nav">
-          <a href="index.html" class="global_nav_item">
-            <li>Home</li>
-          </a>
-          <a href="#menu" class="global_nav_item">
-            <li>Menu</li>
-          </a>
-          <a href="contact.html" class="global_nav_item">
-            <li>Contactos</li>
-          </a>
-        </ul>
-      </nav>
+        <nav class="header_nav">
+            <a href="index.html" class="logo"><img src="./images/sample_logo_k.png"></a>
+            <ul class="global_nav">
+                <a href="index.html" class="global_nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="#menu" class="global_nav_item">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html" class="global_nav_item">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
     <section class="section_inner">
-      <div class="section_title">
-        <h1>Venta de cafe</h1> 
-        <h1>en granos</h1>
-      </div>
+        <div class="section_title">
+            <h1>Venta de granos de cafe</h1>
+        </div>
     </section>
 
     <section class="section_inner menu_section">
-      <div class="center">
-        <h1 class="menu_title">Lista</h1>
-      </div>
-      <ul class="menu_list coffee_menu">
-        <li class="caffee_menu_list_item">
-          <div class="caffee_menu_content">
-            <h2 class="menu_item_title">Mezcla original 200g</h2>
-            <p class="caffee_menu_price">500¥</p>
-          </div>
-          <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
-        </li>
-        <li class="caffee_menu_list_item">
-          <div class="caffee_menu_content">
-            <h2 class="menu_item_title">Mezcla original 500g</h2>
-            <p class="caffee_menu_price">900¥</p>
-          </div>
-          <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
-        </li>
-        <li class="caffee_menu_list_item">
-          <div class="caffee_menu_content">
-            <h2 class="menu_item_title">mezcla especial 200g</h2>
-            <p class="caffee_menu_price">700¥</p>
-          </div>
-          <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
-        </li>
-        <li class="caffee_menu_list_item">
-          <div class="caffee_menu_content">
-            <h2 class="menu_item_title">mezcla especial 500g</h2>
-            <p class="caffee_menu_price">1200¥</p>
-          </div>
-          <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
-        </li>
-      </ul>
-      <h2>Información</h2>
-      <ul>
-        <li>・Si el monto total es inferior a 2000¥, la tarifa de envio es de 500¥</li>
-        <li>・Para pedidos superiores2000¥, la tarifa es de  250¥</li>
-        <li>・Gratis para pedidos mayores a 3000¥</li>
-      </ul>
+        <div class="center">
+            <h1 class="menu_title">MENU</h1>
+        </div>
+        <ul class="menu_list coffee_menu">
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 200g</h2>
+                    <p class="caffee_menu_price">500 ¥</p>
+                </div>
+                <img src="./images/sample_cafe1.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 500g</h2>
+                    <p class="caffee_menu_price">900 ¥</p>
+                </div>
+                <img src="./images/sample_cafe1.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 200g</h2>
+                    <p class="caffee_menu_price">700 ¥</p>
+                </div>
+                <img src="./images/sample_cafe3.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 500g</h2>
+                    <p class="caffee_menu_price">1200 ¥</p>
+                </div>
+                <img src="./images/sample_cafe3.jpg" class="caffee_menu_image">
+            </li>
+        </ul>
+        <h2>Información de envío</h2>
+        <ul>
+            <li>・Si el monto total es inferior a 2000¥, la tarifa de envío es de 500¥</li>
+            <li>・250¥ para pedidos superiores a 2000¥</li>
+            <li>・Gratis para pedidos superiores a 3000¥</li>
+        </ul>
     </section>
 
     <section class="section_inner">
-      <h2>Pedidos</h2>
-      <form>
-        <p>Por favor seleccione un producto</p>
-        <div>
-          <select id="product" required>
-            <option hidden value="0">Por favor seleccione</option>
-            <option value="1">Mezcla original 200g 500¥</option>
-            <option value="2">Mezcla original 500g 900¥</option>
-            <option value="3">Mezcla especial 200g 700¥</option>
-            <option value="4">Mezcla especial 500g 1200¥</option>
-          </select>
-          <p>Selecione la cantidad</p>
-          <input type="number" min="1" max="5" id="number" required>
-        </div>
-        <br>
-        <input type="button" class="btn" value="AGREGAR" onclick="add()">
-        <input type="button" class="btn" value="ORDENAR" onclick="calc()">
-      </form>
+        <h2>Pedidos</h2>
+        <form>
+            <p>Por favor seleccione un producto</p>
+            <div>
+                <select id="product" required>
+                    <option hidden value="0">Por favor seleccione una opción</option>
+                    <option value="500" data-descripcion="Mezcla Original 200g">Mezcla Original 200g 500¥</option>
+                    <option value="900" data-descripcion="Mezcla Original 500g">Mezcla Original 500g 900¥</option>
+                    <option value="700" data-descripcion="Mezcla Especial 200g">Mezcla Especial 200g 700¥</option>
+                    <option value="1200" data-descripcion="Mezcla Especial 500g">Mezcla Especial 500g 1200¥</option>
+                </select>
+                <p>Por favor seleccione cantidad</p>
+                <input type="number" min="1" max="5" id="number" required>
+            </div>
+            <br>
+            <input type="button" class="btn" value="AGREGAR" onclick="aggProducto()">
+            <input type="button" class="btn" value="ORDENAR" onclick="calcularPedido()">
+        </form>
     </section>
-    <script type="text/javascript" src="javascripts/sale.js"></script>
-    <footer>
-      <nav>
-        <ul>
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="#menu">
-            <li>Menu</li>
-          </a>
-          <a href="contact.html">
-            <li>Contactos</li>
-          </a>
-          <a href="index.html">
-            <li>
-              <img src="images/sample_logo_w.png" class="footer_logo">
-            </li>
-          </a>
-        </ul>
-      </nav>
-      <p>© DIVIC Corp. All RIGHTS RESERVED.</p>
+    <script type="text/javascript" src="./javascripts/sale.js"></script>
+
+    <footer class="footer">
+        <nav>
+            <ul class="footer_nav">
+                <a href="index.html" class="footer_nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="#menu" class="footer_nav_item">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html" class="footer_nav_item">
+                    <li>Contact</li>
+                </a>
+                <a href="index.html" class="footer_nav_item">
+                    <li>
+                        <img src="./images/sample_logo_w.png" class="foote_logo">
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <p class="footer_righ">© DIVE INTO CODE Corp. All RIGHTS RESERVED.</p>
     </footer>
-  </body>
+
+</body>
+
 </html>
